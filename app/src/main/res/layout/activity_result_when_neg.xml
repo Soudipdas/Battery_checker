@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC2E2E"
+    tools:context=".Result_when_neg">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20sp"
+        android:background="@drawable/shapeback">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="POOR"
+            android:textSize="25sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="40sp"
+            android:textColor="#CC2E2E"
+            android:textStyle="bold"
+            android:gravity="bottom"
+            android:layout_toLeftOf="@+id/check"/>
+        <ImageView
+            android:id="@+id/checkneg"
+            android:layout_width="50sp"
+            android:layout_marginTop="40sp"
+            android:layout_marginRight="20sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_warning_black_24dp"
+            android:layout_alignParentRight="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkneg"
+            android:background="@drawable/textbackred"
+            android:paddingBottom="25sp"
+            android:paddingLeft="15sp"
+            android:paddingTop="15sp"
+            android:paddingRight="15sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="30sp"
+            android:id="@+id/relrectneg"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is pretty serious...\nBattery life is very now...\n You have to change the battery now"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relrectneg"
+            android:layout_marginTop="50sp"
+            android:layout_centerHorizontal="true">
+            <Button
+                android:layout_width="200sp"
+                android:textSize="20sp"
+                android:layout_height="200sp"
+                android:text="Click for more details"
+                android:gravity="center"
+                android:background="@drawable/red_circle"
+                android:textColor="#ffffff"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF1782FF"
+    tools:context=".Home_Screen">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:textColor="#ffffff"
+        android:text="CHECK\n BATTERY\n STATUS"
+        android:textSize="20sp"
+        android:paddingTop="40sp"
+        android:layout_marginTop="100sp"
+
+        android:paddingBottom="40sp"
+        android:textStyle="bold"
+        android:paddingLeft="30sp"
+        android:paddingRight="30sp"
+
+        android:background="@drawable/buttonshape"
+
+        android:id="@+id/check"/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:indicatorName="LineScaleIndicator"
+        app:indicatorColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80sp"
+        android:id="@+id/avi"
+
+        />
+
+
+
+
+
+
+</RelativeLayout>

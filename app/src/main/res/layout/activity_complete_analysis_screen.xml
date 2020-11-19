@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2ECC71 "
+    android:id="@+id/mainback"
+    tools:context=".Complete_analysis_screen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20sp"
+        android:background="@drawable/shapeback"
+        >
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/checkimg"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/ic_check_circle_black_24dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textback"
+            android:paddingBottom="25sp"
+            android:paddingLeft="15sp"
+            android:paddingTop="15sp"
+            android:paddingRight="15sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="30sp"
+            android:layout_below="@+id/checkimg"
+            android:id="@+id/ovhealthrel"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OVERALL HEALTH"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:id="@+id/ovhealthlabel"
+                android:textColor="#ffffff"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="mscm"
+                android:layout_below="@+id/ovhealthlabel"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="10sp"
+                android:textSize="20sp"
+                android:id="@+id/ovhealth"
+                android:textColor="#ffffff"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textback"
+            android:paddingBottom="25sp"
+            android:paddingLeft="15sp"
+            android:paddingTop="15sp"
+            android:paddingRight="15sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="30sp"
+            android:id="@+id/temprel"
+            android:layout_below="@+id/ovhealthrel"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Temperature"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:id="@+id/templabel"
+                android:textColor="#ffffff"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-0"
+                android:layout_below="@+id/templabel"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:id="@+id/fintemp"
+                android:textColor="#ffffff"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textback"
+            android:paddingBottom="25sp"
+            android:paddingLeft="15sp"
+            android:paddingTop="15sp"
+            android:paddingRight="15sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="30sp"
+            android:id="@+id/voltrel"
+            android:layout_below="@+id/temprel"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Voltage"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:id="@+id/voltlabel"
+                android:textColor="#ffffff"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-0"
+                android:layout_below="@+id/voltlabel"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:id="@+id/finvolt"
+                android:textColor="#ffffff"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
