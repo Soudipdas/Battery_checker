@@ -9,3 +9,5 @@ With time I will be trying to put more criterias and also calculate the expected
 
 [![Screenshot-163.png](https://i.postimg.cc/13PnfYdz/Screenshot-163.png)](https://postimg.cc/CzPL2JSy)
 
+This is the screen with which app opens (a splash screen for showing the icon).
+
